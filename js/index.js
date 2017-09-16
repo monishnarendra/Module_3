@@ -32,10 +32,12 @@ function Submit_SignIn(){
             
             });
     }
+    setTimeout(function(){
     if(Obtained_password == Entered_Password){
         window.alert("password accepted welcome");
         location.href = "details.html";
     }else{
         window.alert("password not accepted");
     }
+},10000);
 }
